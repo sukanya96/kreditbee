@@ -1,0 +1,23 @@
+p{
+    font-size: 13px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+a{
+    
+    color: gray;
+    text-decoration: none;
+}
+.primary{
+    background-color: orange;
+    font-weight: bold;
+    padding: 5px 25px;
+    font-size: 15px;
+}
+
+ion-col > div {
+    background-color: white;
+    border: solid 1px #ddd;
+    padding: 15px;
+  }

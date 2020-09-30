@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>wait</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <ion-list>
+    <ion-item>
+    <h3 (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">How to book a service?
+    <ion-icon  [name]="isGroupShown(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+     style="color: orange;margin-left:10px;font-size: 15px;">
+    </ion-icon>
+    <p *ngIf="isGroupShown(i)" style="font-size: 15px;margin-bottom: 5px;margin-top: 20px;"> 
+
+      Click the button and you will get to the page with the details of the booking.
+    </p>
+    </h3>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+    <h3 (click)="toggleGroup1(i)" [ngClass]="{active: isGroupShown1(i)}">How to cancel a Booking?
+    <ion-icon  [name]="isGroupShown1(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+     style="color: orange;margin-left:10px;font-size: 15px;">
+    </ion-icon>
+    <p *ngIf="isGroupShown1(i)" style="font-size: 15px;margin-bottom: 5px;margin-top: 20px;"> 
+      Click the button and you will get to the page with the details of the booking.
+    </p>
+    </h3>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+    <h3 (click)="toggleGroup2(i)" [ngClass]="{active: isGroupShown2(i)}">How to cancel a Booking?
+    <ion-icon  [name]="isGroupShown2(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+     style="color: orange;margin-left:10px;font-size: 15px;">
+    </ion-icon>
+    <p *ngIf="isGroupShown2(i)" style="font-size: 15px;margin-bottom: 5px;margin-top: 20px;"> 
+      Click the button and you will get to the page with the details of the booking.
+    </p>
+    </h3>
+    </ion-item>
+  </ion-list>
+
+
+  
+
+</ion-content>
+

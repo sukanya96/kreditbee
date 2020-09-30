@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-toolbar color="tertiary">
+  <h5><a href="home" style="color: white;text-decoration: none;">
+  <ion-icon name="arrow-back" style="margin-right: 25px;color: white;"></ion-icon>Log in With Facebook</a></h5>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content style="text-align: center;">
+
+  <ion-content fullscreen>
+  <ion-searchbar type="text" debounce="500" (ionChange)="getItems($event)"></ion-searchbar>
+
+     <ion-list *ngIf="isItemAvailable" style="margin-bottom: 30px;">
+         <ion-item *ngFor="let item of items">{{ item }}</ion-item>
+         <ion-item>Bhargavi</ion-item>
+         <ion-item>harshini</ion-item>
+         <ion-item>sukanya</ion-item>
+         <ion-item>venkat</ion-item>
+     
+        <ion-item>Amsterdam</ion-item>
+        <ion-item>Bogota</ion-item>
+        <ion-item>Buenos Aires</ion-item>
+        <ion-item>Cairo</ion-item>
+        <ion-item>Dhaka</ion-item>
+        <ion-item>Edinburgh</ion-item>
+        <ion-item>Geneva</ion-item>
+        <ion-item>Genoa</ion-item>
+        <ion-item>Glasgow</ion-item>
+        <ion-item>Hanoi</ion-item>
+        <ion-item>Hong Kong</ion-item>
+        <ion-item>Islamabad</ion-item>
+        <ion-item>Istanbul</ion-item>
+        <ion-item>Jakarta</ion-item>
+        <ion-item>Kiel</ion-item>
+        <ion-item>Kyoto</ion-item>
+        <ion-item>Le Havre</ion-item>
+        <ion-item>Lebanon</ion-item>
+        <ion-item>Lhasa</ion-item>
+        <ion-item>Lima</ion-item>
+        <ion-item>London</ion-item>
+        <ion-item>Los Angeles</ion-item>
+        <ion-item>Madrid</ion-item>
+        <ion-item>Manila</ion-item>
+        <ion-item>New York</ion-item>
+        <ion-item>Olympia</ion-item>
+        <ion-item>Oslo</ion-item>
+        <ion-item>Panama City</ion-item>
+        <ion-item>Peking</ion-item>
+        <ion-item>Philadelphia</ion-item>
+        <ion-item>San Francisco</ion-item>
+        <ion-item>Seoul</ion-item>
+        <ion-item>Taipeh</ion-item>
+        <ion-item>Tel Aviv</ion-item>
+        <ion-item>Tokio</ion-item>
+        <ion-item>Uelzen</ion-item>
+        <ion-item>Washington</ion-item>
+        
+      </ion-list>
+    
+
+<img src="assets/Artboard 2.png"
+style="width: 50px;height: 50px;margin-top: 50px;">  
+<h6 style="margin-bottom: 0rem;"><a href="" style="color: black;font-weight: bold;">Credit Monk</a> will receive:</h6>
+<p>your name and profile and email address.</p>
+
+
+<a href="otp"><ion-icon name="create-outline"></ion-icon>Edit This</a>
+<p style="margin-top: 60px;"><ion-icon name="lock-closed"></ion-icon> This doesn't let the app post to Facebook</p>
+<div class="container">
+  <a href="reg">
+<button class="btn primary">Continue as Sukanya</button></a>
+</div>
+<p style="margin-top: 190px;">Credit Monk<a href="legal1"> Privacy Policy</a>and
+   <a href="legal2">Terms</a></p>
+
+</ion-content>
+

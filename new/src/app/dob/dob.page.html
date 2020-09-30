@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="secondary" style="text-align: right;">
+  
+  <ion-icon name="chevron-back-outline" style="margin-right: 250px;font-size: 20px;color:white"
+  routerLink="/name"></ion-icon>
+    
+  <ion-icon name="settings-outline" style="font-size: 20px;color: white;" routerLink="/settings">
+  </ion-icon>&nbsp;
+    
+  <ion-icon name="help-circle-outline" style="font-size: 22px;color: white;" routerLink="/help2">
+  </ion-icon>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+  <div class="container">
+    <br>
+    <p style="font-size: 22px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+      Your Date of Birth & Gender</p>
+    </div>
+    <br>
+    <ion-grid>
+      <p style="font-size: 12px;color: grey;">Date of Birth DD/MM/YYYY (exactly as per PAN)</p>
+     <ion-row> 
+        <ion-col size="1">
+         <i class="material-icons" style="font-size: 22px;color:skyblue;margin-top: 16px;">cake</i>
+          </ion-col>
+       <ion-col>
+      <ion-item>
+      <ion-input style="font-size: 15px;font-weight: 600;">
+      <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2012-12-09" value="T15:03:46.789"></ion-datetime>
+      </ion-input>
+      </ion-item>
+    </ion-col>
+    </ion-row>
+    </ion-grid>
+
+    <p style="color: grey;">Gender</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <i class="fa fa-transgender" style="color: skyblue;font-size: 20px;"></i>
+          </ion-col>
+          <ion-col size="3">
+          <button class="btn but">MALE</button>
+          </ion-col>
+          <ion-col>
+          <button class="btn but1" style="margin-left: 10px;">FEMALE</button>
+          </ion-col>
+    </ion-row>
+    </ion-grid>
+    
+    <br><br>
+  
+     <div class="container" style="text-align: right;" class="ion-text-end">
+      <a href="pincode" style="color: black;">
+      <button class="button warning">
+      <ion-row>
+      <ion-col>
+      <p style="font-weight: bold;font-family: Calibri;font-size: 15px;">Next</p></ion-col>
+      <ion-col size="3">
+        <ion-icon name="chevron-forward-outline" style="font-size: 15px;font-weight: bold;color: black;">
+      </ion-icon>
+      </ion-col>
+    </ion-row></button></a>
+     </div>
+
+</ion-content>

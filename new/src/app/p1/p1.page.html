@@ -1,0 +1,52 @@
+<ion-header>
+<ion-toolbar color="tertiary">
+</ion-toolbar>
+</ion-header>
+
+ <ion-content>
+
+  <div class="container">
+  <h6><ion-icon name="location" style="font-size: 20px;color: blue;"></ion-icon>&nbsp;Location</h6>
+  <p>We collect and monitor the information about the location of your device to provide serviceability of your
+    loan application, to reduce risk associated with your loan application and to provide pre-approved
+    customised loan offers.This also helps us to verify the address, make a better credit risk decision and 
+    expedite your KYC process
+  </p>
+  <h6><ion-icon name="camera" style="font-size: 20px;color:blue;"></ion-icon>&nbsp;Camera</h6>
+  <p>We require camera access so that you can easily scan or capture required KYC documents and save time by 
+    allowing us to auto-fill relevent data or to initiate an audio/video call for KYC purpose.This ensures that
+    you are provided with a seamless experience while using the application. 
+  </p> 
+  <h6><ion-icon name="mic" style="font-size: 20px;color: blue;"></ion-icon>&nbsp;Microphone</h6>
+  <p>We require microphone permission to initiate two-way audio communication as a part of KYC journey.
+    This may be stored for future verification purposes.</p>
+    
+    <h6><i class='fas fa-folder-open' style="font-size:20px;color: blue;"></i>&nbsp;Storage</h6>
+    <p>We require storage permission so that your KYC and other relevant documents can be securely downloaded
+      and saved on your phone.You can then easily upload the right KYC related documents for faster loan
+      application details filling and disbursal process.This ensures that you are provided with a seamless
+      experience while using the application. 
+    </p>
+    </div>
+
+    <p style="margin-right: 15px;">Please note that certain information that is required mandatory to perform your credit risk
+      assessment is securely shared with our registered third-party service provider. 
+    </p>
+    <ion-row>
+      <ion-col size="0">
+        <form action="/action_page.php">
+      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+      </form>
+    </ion-col>
+    <ion-col>
+    <p>By continuing you agree to our <a href="" style="color: blue;">Privacy Policy</a> & <a href="" 
+      style="color: blue;">Terms of Service</a> and recieve communication from
+      KreditBee via SMS,E-mail and Whatsapp</p>
+    </ion-col>
+    </ion-row>
+    <div class="container">
+    <button class="btn warning">I Disagree</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn warning" (click)="presentAlert()">I Agree</button>
+    </div>
+
+  </ion-content>

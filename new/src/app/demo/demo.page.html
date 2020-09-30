@@ -1,0 +1,160 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>demo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <!--<button id="button" (click)="showhide()">Show/Hide</button>
+  <div id="newpost">  
+        <p> JavaScript is the programming language of HTML and the Web. <br />  
+            Programming makes computers do what you want them to do. <br />  
+            JavaScript is easy to learn.  </p>  
+    </div>  -->
+
+  
+   <!----  <button (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}" 
+    style="color: black;font-size: 13px;">What is Credit Monk?
+      <ion-icon [name]="isGroupShown(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+       style="margin-left: 180px;color: orange;font-size: 15px;">
+      </ion-icon>
+      <p *ngIf="isGroupShown(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+      margin-bottom: 10px;text-align: justify;color: gray;"> 
+       CreditMonk is an Instant Personal Loan Platform for individuals, where you can apply for a Loan of up to
+       ₹ 2 Lakh. CreditMonk acts as a technology intermediary and facilitates this Personal Loans from regulated 
+       lenders to individuals. The documentation is very minimal, and the entire process starting from registration
+       to disbursement does not take more than 15 minutes. The application process is completely online, and on 
+       approval, the cash is immediately transferred to the bank account of the user.
+      </p></button>-->
+      
+      <div class="container">
+
+        <p style="color: grey;">Employment Type</p></div>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1">
+            <i class="fab fa-black-tie" style="color:skyblue;"></i>
+            </ion-col>
+            <ion-col size="4">
+            <button class="btn but" (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+            SALARIED</button>
+          </ion-col>
+          <ion-col>
+          <button class="btn but1" style="margin-left: 10px;">SELF-EMPLOYED</button>
+          </ion-col>
+       </ion-row>
+        </ion-grid>
+
+           <p *ngIf="isGroupShown(i)">  
+          
+          <ion-grid>
+          <ion-row>
+          <ion-col size="1">
+          <i class="far fa-building" style="font-size: 20px;margin-top: 16px;color: skyblue;"></i>
+          </ion-col>
+          <ion-col>
+          <ion-item>
+          <ion-input style="font-size: 13px;font-weight: 600;" placeholder="&nbsp;Search company from the list"></ion-input>
+          <i class="material-icons" style="font-size: 15px;color: orange;">edit</i>
+        </ion-item></ion-col>
+      </ion-row>
+      </ion-grid>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="1">
+                <i class="fa fa-money" aria-hidden="true"
+                style="font-size: 18px;margin-top: 16px;color: skyblue;"></i>
+              </ion-col>
+             <ion-col>
+            <ion-item>
+            <ion-input style="font-size: 13px;font-weight: 600;" placeholder="&nbsp;Mode of Salary"></ion-input>
+            <ion-icon name="chevron-down-outline" style="font-size: 15px;color: orange;"></ion-icon>
+            </ion-item></ion-col>
+          </ion-row>
+          </ion-grid>
+           </p>
+
+              <ion-grid>
+                <ion-row>
+                <ion-col size="1">
+                  <i class="fas fa-rupee-sign" style="font-size:15px;border: 2px solid;color: skyblue;margin-top: 16px;"></i>
+                  </ion-col>
+                  <ion-col>
+                    <ion-item>
+                    <ion-input style="font-size: 13px;font-weight: 600;" placeholder="&nbsp;Monthly salary/Income"></ion-input>
+                    </ion-item></ion-col>
+                  </ion-row>
+                  </ion-grid>
+                  
+                  <ion-grid>
+                  <ion-row>
+                    <ion-col size="1">
+                      <form action="/action_page.php">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                    </form>
+                  </ion-col>
+                  <ion-col>
+                  <p style="font-size: 14px;color: grey;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  text-align: justify;">
+                    I agree that my monthly Household Income(including income from all people residing in my house)
+                    is greater than ₹ 17000
+                  </p>
+                  </ion-col>
+                  </ion-row>
+                  </ion-grid>
+              
+                  
+            <div class="container" style="text-align: right;">
+            <a href="" style="color: black;">
+            <button color="warning" style="background-color: orange;">
+            <ion-row>
+            <ion-col>
+            <p style="font-weight: bold;font-family: Calibri;font-size: 15px;">Next</p></ion-col>
+            <ion-col>
+          <ion-icon name="chevron-forward-outline" style="font-size: 18px;font-weight: bold;color: orangered">
+          </ion-icon>
+         </ion-col>
+        </ion-row></button></a>
+      </div> 
+
+     <ion-grid>
+      <ion-row>
+      <ion-col size="1">
+      <i class="fa fa-money" aria-hidden="true"
+      style="font-size: 18px;margin-top: 16px;color: skyblue;"></i>
+      </ion-col>
+      <ion-col>
+      <ion-item>
+        <h3 (click)="toggleGroup1(i)" [ngClass]="{active: isGroupShown1(i)}">
+      <ion-input placeholder="&nbsp;Mode of Salary" style="font-size: 13px;font-weight: 600;">
+      <ion-icon [name]="isGroupShown1(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+      style="color: orange;font-size: 15px;"></ion-icon>
+      
+      <p *ngIf="isGroupShown1(i)">
+       CreditMonk is an Instant Personal Loan Platform for individuals, where you can apply for a Loan of up to
+       ₹ 2 Lakh.</p></ion-input></h3>
+      
+      </ion-item></ion-col>
+      </ion-row>
+      </ion-grid>               
+            
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li class="dropdown-item" href="#">Action</li>
+          <li class="dropdown-item" href="#">Another action</li>
+          <li class="dropdown-item" href="#">Something else here</li>
+        </div>
+      </div>
+      
+              
+      
+      
+  </ion-content>
+

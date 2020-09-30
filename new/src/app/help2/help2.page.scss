@@ -1,0 +1,45 @@
+p{
+    font-size: 13px;
+    font-family: Roboto-Regular,Helvetica,Arial,sans-serif;
+}
+h6{
+    color: orange;
+    font-size: 15px;
+}
+h5{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+h3{
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+}
+
+.warning{
+border-color:skyblue;
+}
+
+ion-card:hover {
+    box-shadow: 5px 16px 32px 5px rgba(0,0,0,0.2);
+     opacity: 0.7;
+     cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.btn {
+    border: 2px solid skyblue;
+    background-color: white;
+    color: black;
+    padding: 5px 40px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+  }

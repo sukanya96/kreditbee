@@ -1,0 +1,1068 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+  <h5 style="font-size: 15px;color:white"><a href="appln" style="color: white;">
+  <ion-icon name="chevron-back-outline" 
+  style="font-size: 20px;margin-right:25px;margin-left: 10px;color: white;"></ion-icon>
+  </a>Help
+<a href="help">
+<ion-icon name="call-outline" style="font-size: 18px;color:white;margin-left: 180px;"></ion-icon></a></h5>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+    <h3>what can we help you with?</h3>
+    <h6 style="color: grey;">Giving us a bit of info now helps move things along more quickly</h6>
+    </div>
+    
+    <ion-row>
+    <ion-col>
+    <ion-card style="border: 1px solid;color: blue;"  routerLink="/creditlimit">
+      <ion-card-content style="text-align: center;">
+        <img src="https://media.istockphoto.com/vectors/isolated-hexagon-with-a-rupee-sign-vector-id994611082?b=1&k=6&m=994611082&s=170x170&h=L4nbHbjOpcTR5pq1viEeRIqLN6iUZu4rHcequcKyu6k="
+        style="width: 50px;height: 40px; text-align: center;" class="img-circle">
+        <h5>Credit Limit Enhancement</h5>
+      </ion-card-content>
+      </ion-card>
+     </ion-col>
+  
+  <ion-col>
+  <ion-card style="border: 1px solid;color: blue;" routerLink="/loan">
+  <ion-card-content  style="text-align: center;">
+    <img src="https://www.kindpng.com/picc/m/391-3913327_class-lazyload-lazyload-mirage-cloudzoom-featured-rupee-cash.png"
+    style="width: 60px;height: 40px;text-align: center;" class="img-circle">
+  <h5>Loan Product Enquiry</h5>
+  </ion-card-content>
+  </ion-card>
+  </ion-col>
+  </ion-row>
+  
+  <ion-row>
+  <ion-col>
+    
+  <ion-card style="border: 1px solid;color: blue;" routerLink="/repayment">
+    <ion-card-content style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmkhjE7Nop_7FqY8KeMY5grwE4Nk6tdbpXawDUanYuhcX7VQoC&usqp=CAU"
+    class="img-circle" style="width: 50px;height: 40px;" class="img-circle">
+    <h5>Loan Repayment</h5>
+    </ion-card-content>
+  </ion-card>
+  </ion-col>
+  
+  <ion-col>
+  <ion-card style="border: 1px solid;color: blue;" routerLink="/disbursal">
+  <ion-card-content style="text-align: center;">
+    <img src="https://cdn2.iconfinder.com/data/icons/business-and-finance-43/32/23_investment_budget_indian_rupee_startup_funding-512.png"
+    class="img-circle" style="width: 50px;height: 50px;text-align: center;">
+    <h5>Loan Disbursal</h5>
+  </ion-card-content>
+  </ion-card>
+  </ion-col>
+  </ion-row>
+  
+  <ion-row>
+  <ion-col>
+  <ion-card style="border: 1px solid;color: blue;" routerLink="/verify">
+    <ion-card-content style="text-align: center;">
+      <ion-icon name="person-circle" style="color:blueviolet;font-size:35px;text-align: center;"></ion-icon>
+      <h5>Profile Verification</h5>
+    </ion-card-content>
+  </ion-card>
+  </ion-col>
+  
+  <ion-col>
+  <ion-card style="border: 1px solid;color: blue;" routerLink="/query">
+  <ion-card-content style="text-align: center;">
+    <i class="glyphicon glyphicon-th-list" style="color: cadetblue;font-size: 25px;margin-bottom: 15px;
+    text-align: center;"></i>
+    <h5>Didn't find your Query?</h5>
+  </ion-card-content>
+  </ion-card>
+  </ion-col>
+  </ion-row>
+  
+  
+  <h6 style="text-align: center;color: grey;">Still need help?</h6>
+  <div class="container" class="text-center" style="margin-bottom: 15px;">
+  <button class="btn warning" routerLink="/contact">Contact Us</button>
+  </div>
+
+    <div class="container">
+    <h3>Frequently Asked Questions</h3>
+    <br>
+    <p style="color: orange;">About Proascent</p>
+    </div>
+    
+    <ion-list>
+    <ion-item>
+    <h6 (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}" style="color: black;font-size: 13px;">
+      What is Proascent?
+    <ion-icon [name]="isGroupShown(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+     style="margin-left: 150px;color: orange;font-size: 15px;">
+    </ion-icon>
+    <p *ngIf="isGroupShown(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+    margin-bottom: 10px;text-align: justify;color: gray;"> 
+    Proascent is an Instant Personal Loan Platform for individuals, where you can apply for a Loan of up to
+     ₹ 2 Lakh. Proascent acts as a technology intermediary and facilitates this Personal Loans from regulated 
+     lenders to individuals. The documentation is very minimal, and the entire process starting from registration
+     to disbursement does not take more than 15 minutes. The application process is completely online, and on 
+     approval, the cash is immediately transferred to the bank account of the user.
+    </p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup1(i)" [ngClass]="{active: isGroupShown1(i)}"
+      style="color: black;font-size: 13px;"> Who can apply for a loan in Proascent?
+      <ion-icon [name]="isGroupShown1(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+       style="margin-left: 35px;color: orange;font-size: 15px;">
+      </ion-icon>
+      <p *ngIf="isGroupShown1(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+      margin-bottom: 10px;text-align: justify;color: gray;"> 
+       Proascent is an Instant Personal Loan Platform for individuals, where you can apply for a Loan of up to
+       ₹ 2 Lakh.
+      Any Indian individual above the age of 21 years, who is salaried or has a monthly source of income may
+      apply for a Personal Loan through the Proascent Platform.</p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup2(i)" [ngClass]="{active: isGroupShown2(i)}"
+      style="color: black;font-size: 13px;">
+      <p>How does Proascent work?
+        <ion-icon [name]="isGroupShown2(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 103px;color: orange;font-size: 15px;">
+       </ion-icon>
+       <p *ngIf="isGroupShown2(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+       margin-bottom: 10px;text-align: justify;color: gray;"> 
+       Proascent is a technology platform which helps individuals avail Personal Loan through regulated lending
+       partners. Applying for a Personal Loan through the proascent Platform is simple, quick and easy. Just follow 
+        the below steps:
+          a. Install the proascent app from the Play Store.
+          b. Register yourself via your Facebook or Google profile.
+          c. Fill in your basic details to check your eligibility for availing a Personal Loan through proascent. 
+          This process hardly takes 3-5 minutes, after which you shall be shown an ‘eligibility successful’ page.
+           An SMS indicating the same shall also be sent over to your registered mobile number (Sometimes, this 
+           process might take up to 24 hours in case there is a detailed check that is required. In such cases, 
+           you shall receive a call from proascent within 1 working day of application).
+          d. Upon confirmation on the eligibility, you will need to upload your KYC documents and fill in a few more
+           details about yourself. It should not take you more than 5-10 minutes to do the same.
+          e. Once you have uploaded the KYC documents and the other additional information, the profile will be 
+          verified depending on the authenticity and quality of the documents uploaded.
+          f. Once verified, you can apply for a loan through proascent and sign a Loan agreement. After the Loan 
+          agreement is signed and loan application is created, the amount shall be disbursed into the bank account
+           provided by you within 15 minutes.</p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup3(i)" [ngClass]="{active: isGroupShown3(i)}"
+      style="color: black;font-size: 13px;">
+      <p>On what basis does Proascent lend?
+        <ion-icon [name]="isGroupShown3(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 50px;color: orange;font-size: 15px;">
+       </ion-icon>
+        <p *ngIf="isGroupShown3(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+        Proascent has tied up with KrazyBee Services Private Limited which is a certified NBFC and other 
+        NBFC partners for lending.
+        </p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup4(i)" [ngClass]="{active: isGroupShown4(i)}"
+      style="color: black;font-size: 13px;">
+      <p>Does Proascent have an NBFC license?
+        <ion-icon [name]="isGroupShown4(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left:30px;color: orange;font-size: 15px;">
+       </ion-icon>
+        <p *ngIf="isGroupShown4(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+       Proascent has tied up with KrazyBee Services Private Limited which is a certified NBFC and other NBFC
+      partners for lending.
+        </p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup5(i)" [ngClass]="{active: isGroupShown5(i)}"
+      style="color: black;font-size: 13px;">
+      <p>What are Proascent Terms and Conditions?
+        <ion-icon [name]="isGroupShown5(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="color: orange;font-size: 15px;margin-left: 10px;">
+       </ion-icon>
+        <p *ngIf="isGroupShown5(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;">
+          You can read our T&C here.
+        </p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup6(i)" [ngClass]="{active: isGroupShown6(i)}"
+      style="color: black;font-size: 13px;">
+      <p>What is Proascent Privacy Policy?
+        <ion-icon [name]="isGroupShown6(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 65px;color: orange;font-size: 15px;">
+       </ion-icon>
+        <p *ngIf="isGroupShown6(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;">
+          You can read our Privacy Policy here.
+        </p></h6>
+    </ion-item>
+
+    <ion-item>
+      <h6 (click)="toggleGroup7(i)" [ngClass]="{active: isGroupShown7(i)}"
+      style="color: black;font-size: 13px;">
+    <p>What is the advantage of availing a personal
+      <ion-icon [name]="isGroupShown7(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 5px;color: orange;font-size: 15px;">
+       </ion-icon>
+        <p *ngIf="isGroupShown7(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+        It usually takes anywhere from 4 – 7 days to avail a Personal Loan from a bank, which also requires a
+         lot of documentation and frequent visits to the branch office. However, the Proascent Personal Loan 
+         process is entirely online, and it hardly takes 15 minutes for the entire process depending on your 
+         information. The amount is transferred directly to your bank account, available for use anytime and 
+         anywhere as per your convenience.
+      </p></h6>
+    </ion-item>
+    <ion-item>
+      <h6 (click)="toggleGroup8(i)" [ngClass]="{active: isGroupShown8(i)}"
+      style="color: black;font-size: 13px;">
+      <p>Which locations can you apply for a loan
+        <ion-icon [name]="isGroupShown8(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 28px;color: orange;font-size: 15px;">
+       </ion-icon> through Proascent?</p>
+      <p *ngIf="isGroupShown8(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+          Proascent is a digital platform and is available across all cities in India.
+        </p></h6>
+    </ion-item>
+    <ion-item>
+      <h6 (click)="toggleGroup9(i)" [ngClass]="{active: isGroupShown9(i)}"
+      style="color: black;font-size: 13px;">
+      <p>What all purposes can you apply for a loan 
+        <ion-icon [name]="isGroupShown9(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 15px;color: orange;font-size: 15px;">
+       </ion-icon> through Proascent?</p>
+      <p *ngIf="isGroupShown9(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+        You can take a loan for various reasons - It could be to gift your loved ones, or to take care of a 
+        medical emergency or for shopping or an online sale you do not want to miss! Situations and 
+        opportunities do not come with a notification, and we at Proascent want you to be prepared for anything
+         and everything.
+      </p></h6>
+    </ion-item>
+    <ion-item>
+      <h6 (click)="toggleGroup10(i)" [ngClass]="{active: isGroupShown10(i)}"
+      style="color: black;font-size: 13px;">
+      <p>What all purposes can you utilize the 
+        <ion-icon [name]="isGroupShown10(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>personal loan for?</p>
+        <p *ngIf="isGroupShown10(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+        You can take a loan for various reasons - It could be to gift your loved ones, or to take care of a
+        medical emergency or for shopping or an online sale you do not want to miss! Situations and opportunities
+        do not come with a notification, and we at proascent want you to be prepared for anything and everything.
+        </p></h6>
+      </ion-item>
+    <ion-item>
+      <h6 (click)="toggleGroup11(i)" [ngClass]="{active: isGroupShown11(i)}"
+      style="color: black;font-size: 13px;">
+      <p>What are the various loans you can apply for?
+        <ion-icon [name]="isGroupShown11(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+        style="margin-left: 2px;color: orange;font-size: 15px;"></ion-icon></p>
+        <p *ngIf="isGroupShown11(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+        margin-bottom: 10px;text-align: justify;color: gray;"> 
+       The lending partners of proascent offer various Personal Loans through the proascent Platform ranging from
+       ₹1,000 to ₹ 2 Lakh with different tenures for repayment. The various loan products available through the
+       proascent Platform are: 
+      a. Flexi Personal Loan: This is a Personal Loan with the ticket size ranging from ₹1,000/- to ₹ 1,00,000/- 
+      b. Personal Loan for Salaried: This is a Personal Loan with the ticket size ranging above ₹ 10,000/- to ₹ 2 Lakh
+      </p></h6>
+    </ion-item>
+    <ion-item>
+      <h6 (click)="toggleGroup12(i)" [ngClass]="{active: isGroupShown12(i)}"
+      style="color: black;font-size: 13px;">
+    <p>Is it like a Proascent card?
+      <ion-icon [name]="isGroupShown12(i) ? 'chevron-up-outline' : 'chevron-down-outline'"
+      style="margin-left: 110px;color: orange;font-size: 15px;"></ion-icon></p>
+      <p *ngIf="isGroupShown12(i)" style="font-size: 12px;margin-top: 20px;margin-right: 20px;
+      margin-bottom: 10px;text-align: justify;color: gray;"> 
+        No, this is a personal loan and totally different from a Credit Card which has a moratorium period and
+        the terms are different.
+      </p></h6>
+  </ion-item>
+</ion-list>
+
+<div class="container">
+<h6>Loan application</h6>
+</div>
+<ion-list>
+  <ion-item>
+    <p>What platforms does proascent support?
+      <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;">
+      </ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>What are the documents I must submit for the
+      <ion-icon name="chevron-down-outline" style="margin-left: 2px;color: orange;font-size: 15px;"></ion-icon>
+       Personal Loan?
+      </p>
+  </ion-item>
+  <ion-item>
+    <p>I do not have a Facebook or Google account,
+      <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+      can I still use the proascent App?</p>
+  </ion-item>
+  <ion-item>
+    <p>How long does it typically take for me to 
+      <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon>
+      complete my profile on proascent
+       and avail a Flexi Personal Loan or a Personal Loan for Salaried?</p>
+  </ion-item>
+  <ion-item>
+    <p>What documents do I need to apply for a loan
+      <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+      in Proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>Is there any precondition for me to apply for a 
+      <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+      loan in Proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>Do I need to upload the KYC documents
+      <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon>
+     every time I take a loan through Proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>What do you mean by mobile linked with 
+      <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon>
+      Aadhar?</p>
+  </ion-item>
+  <ion-item>
+    <p>Why is an Aadhaar-linked mobile required?
+    <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>Is there any way in which I can apply for a 
+      <ion-icon name="chevron-down-outline" style="margin-left: 25px;color: orange;font-size: 15px;"></ion-icon>
+      loan in case my mobile number is not linked to Aadhaar Card?</p>
+  </ion-item>
+  <ion-item>
+    <p>Can I click the photo of a photocopy or 
+      <ion-icon name="chevron-down-outline" style="margin-left: 45px;color: orange;font-size: 15px;"></ion-icon>
+      scanned copy of my PAN Card or Identity and Address Proof
+      (Aadhaar,Masked E-Aadhaar, Voter ID,Passport)?</p>
+  </ion-item>
+  <ion-item>
+    <p>Can I get the amount tranferred to someone 
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+       else's bank account?</p>
+  </ion-item>
+  <ion-item>
+    <p>Is it possible to get the loan amount
+    <ion-icon name="chevron-down-outline" style="margin-left: 60px;color: orange;font-size: 15px;"></ion-icon>
+ 
+      transferred to a joint bank account?</p>
+  </ion-item>
+  <ion-item>
+    <p>Where is the loan disbursed?
+    <ion-icon name="chevron-down-outline" style="margin-left: 93px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>Where can I spend the loan amount?
+    <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>I am not able to login to the app for
+    <ion-icon name="chevron-down-outline" style="margin-left: 60px;color: orange;font-size: 15px;"></ion-icon>
+    registration, what do I do?</p>
+  </ion-item>
+  <ion-item>
+    <p>I m facing technical issues during loan 
+      <ion-icon name="chevron-down-outline" style="margin-left: 45px;color: orange;font-size: 15px;"></ion-icon>
+      application.What do I do?
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>I m unable to get the OTP for E-sign on my
+      <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon>
+   phone. What could be the possible reason?</p>
+  </ion-item>
+  <ion-item>
+    <p>I m unable to get the OTP for Auto-Debit on 
+      <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;"></ion-icon>
+      my phone.What could be the possible reason?</p>
+  </ion-item>
+  <ion-item>
+    <p>What if my mobile number is not linked to my
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+
+      Aadhaar Card?</p>
+  </ion-item>
+  <ion-item>
+    <p>My KYC documents are correct,but they are
+      <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;">
+      </ion-icon>
+      not getting verified,what do I do?</p>
+  </ion-item>
+  <ion-item>
+    <p>Can I send my documents to you over email?
+    <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>My profession is not listed,what should I do?
+    <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>My profile verification has been pending for
+      <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon>
+       more than 24 hours,why?</p>
+  </ion-item>
+  <ion-item>
+    <p>My loan application was not approved,what is
+      <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+      the reason?</p>
+  </ion-item>
+  <ion-item>
+    <p>I am eligible for a Flexi Personal Loan but
+      <ion-icon name="chevron-down-outline" style="margin-left: 23px;color: orange;font-size: 15px;"></ion-icon> 
+      cannot avail a loan of ₹ 2 Lakh. Why?</p>
+  </ion-item>
+  <ion-item>
+    <p>Why am I not eligible for a loan of a higher 
+      <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon>
+      amount, when the maximum disbursal amount as per Proascent is ₹ 2 Lakh?</p>
+  </ion-item>
+  <ion-item>
+    <p>Why do you need my bank account details?
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+     </p>
+  </ion-item>
+  <ion-item>
+    <p>Why do you need to verify my bank account?
+    <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>What are the criteria for a bank account to be 
+      <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+     verified?</p>
+  </ion-item>
+  <ion-item>
+    <p>My Bank account could not be verified. What 
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+      do I do next?</p>
+  </ion-item>
+  <ion-item>
+    <p>Why should I sign the Loan Agreement?
+    <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>I applied for a loan, but I did not receive 
+      <ion-icon name="chevron-down-outline" style="margin-left: 40px;color: orange;font-size: 15px;"></ion-icon>
+      the money immediately. Why?</p>
+  </ion-item>
+  <ion-item>
+    <p>Is it necessary to install the Proascent app 
+      <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;"></ion-icon>
+      to apply for a loan?</p>
+  </ion-item>
+  <ion-item>
+    <p>Do I have to complete my profile in one-go?
+    <ion-icon name="chevron-down-outline" style="margin-left: 13px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>What if my app shuts down before I could complete my process?
+    <ion-icon name="chevron-down-outline" style="margin-left: 130px;color: orange;font-size: 15px;"></ion-icon></p>
+  </ion-item>
+  <ion-item>
+    <p>Are there any hidden fee components that 
+      <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon>
+      you charge?</p>
+  </ion-item>
+  <ion-item>
+    <p>How do I get to know my monthly repayment 
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+      schedule?</p>
+  </ion-item>
+  <ion-item>
+    <p>Do I need to be employed to be able to apply
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+      for credit on proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>Can someone from outside India apply for a 
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+      loan via proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>Is there any age limit to apply for a Personal
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+      Loan via proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>Is there a particular time at which I can avail a
+      <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+      loan from proascent?</p>
+  </ion-item>
+  <ion-item>
+    <p>Can I create a profile on proascent even if I
+      <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+       do not need funds right now?</p>
+  </ion-item>
+</ion-list>
+
+<div class="container">
+<h6>Credit Limit</h6>
+</div>
+<ion-list>
+  <ion-item>
+    <p>What do you mean by Credit Score?
+      <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>How do I check my credit limit amount?
+      <ion-icon name="chevron-down-outline" style="margin-left: 33px;color: orange;font-size: 15px;"></ion-icon>
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>What are the different entities that track my 
+      <ion-icon name="chevron-down-outline" style="margin-left: 13px;color: orange;font-size: 15px;"></ion-icon>
+      Credit Score?
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>Is Credit Monk connected with any of these
+      <ion-icon name="chevron-down-outline" style="margin-left: 13px;color: orange;font-size: 15px;"></ion-icon>
+     credit agencies?
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>How is Credit limit decided?
+      <ion-icon name="chevron-down-outline" style="margin-left: 100px;color: orange;font-size: 15px;"></ion-icon>
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>How can I possibly enhance my credit limit?
+      <ion-icon name="chevron-down-outline" style="margin-left: 8px;color: orange;font-size: 15px;"></ion-icon>
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>How is my Credit Score connected to the
+      <ion-icon name="chevron-down-outline" style="margin-left: 25px;color: orange;font-size: 15px;"></ion-icon>
+      Personal Loan that I avail from CreditMonk?
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>Is successful repayment the only criterion
+      <ion-icon name="chevron-down-outline" style="margin-left: 25px;color: orange;font-size: 15px;"></ion-icon>
+      for me to increase my maximum disbursal amount?
+    </p>
+  </ion-item>
+  <ion-item>
+    <p>Is it possible to avail a loan above ₹ 1,00,000?
+      <ion-icon name="chevron-down-outline" style="margin-left: 2px;color: orange;font-size: 15px;"></ion-icon>
+    </p>
+  </ion-item>
+</ion-list>
+<div class="container">
+  <h6>Repayment</h6>
+  </div>
+  <ion-list>
+    <ion-item>
+      <p>How can I repay my loan?
+        <ion-icon name="chevron-down-outline" style="margin-left: 115px;color: orange;font-size: 15px;"></ion-icon>
+      </p>
+    </ion-item>
+    <ion-item>
+    <p>What is the repayment date of my loan?
+    <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon>
+      </p>
+    </ion-item>
+    <ion-item>
+      <p>I am unable to pay on the CreditMonk app. Is
+        <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+        there any other way I can repay the loan?
+     </p>
+    </ion-item>
+    <ion-item>
+      <p>Can I repay the loan before the due date?
+      <ion-icon name="chevron-down-outline" style="margin-left: 25px;color: orange;font-size: 15px;"></ion-icon>
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>Do you have a cash payment option?
+        <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>What happens if I do not repay on time?
+        <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>Is there any way in which I can make a partial
+          <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+          payment on the due date,
+           and pay the remaining amount later?
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>Can I reschedule or postpone my EMI date?
+        <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>Am I allowed to make a prepayment 
+          <ion-icon name="chevron-down-outline" style="margin-left: 55px;color: orange;font-size: 15px;"></ion-icon>
+          on CreditMonk?
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>Are there any hidden charges on CreditMonk?
+        <ion-icon name="chevron-down-outline" style="margin-left: 3px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>How do I get a confirmation about the
+          <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+          repayment I make?
+          </p>
+      </ion-item>
+      <ion-item>
+        <p>Money got deducted from my account, but it
+        <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+        is not showing on the CreditMonk app. Why?
+        </p>
+      </ion-item>
+    </ion-list>
+    <div class="container">
+      <h6>Interest,Processing fees and other Charge</h6>
+      </div>
+      <ion-list>
+        <ion-item>
+          <p>What is the interest charged on the loans
+            <ion-icon name="chevron-down-outline" style="margin-left: 25px;color: orange;font-size: 15px;"></ion-icon>
+            that I avail with CreditMonk?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is the processing fee charged on loans
+            <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+            taken?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Why are the processing fees deducted
+            <ion-icon name="chevron-down-outline" style="margin-left: 40px;color: orange;font-size: 15px;"></ion-icon>
+             from my loan amount upfront?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What do you mean by convenience fees?
+            <ion-icon name="chevron-down-outline" style="margin-left: 25px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What are the penalty charges for Auto Debit?
+            <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Are there any late payment charges?
+            <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is Onboarding fees and why it is being
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            charged?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is Document collection fees and why it 
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            is being charged?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is Credit Re-assessment fees and why it
+            <ion-icon name="chevron-down-outline" style="margin-left: 2px;color: orange;font-size: 15px;"></ion-icon>
+            is being charged?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is Agreement fee and why is it being
+            <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon>
+            charged?
+          </p>
+        </ion-item>
+    </ion-list>
+    <div class="container">
+      <h6>CreditMonk Points and Referral</h6>
+      </div>
+      <ion-list>
+        <ion-item>
+          <p>I am unable to see my Referral Code or
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+
+            the 'share' option in the app. What do I do?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Where can I apply the Referral Code?
+            <ion-icon name="chevron-down-outline" style="margin-left: 40px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I use the Referral Code while applying
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            for a loan?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>When will I get my Referral Points?
+            <ion-icon name="chevron-down-outline" style="margin-left: 55px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>My friends have used my code but no points 
+            <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+            have been credited to my account. Why is that?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How can I view my Points?
+            <ion-icon name="chevron-down-outline" style="margin-left: 100px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How much is 1 CreditMonk Point worth?
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How can I use my CreditMonk Points?
+            <ion-icon name="chevron-down-outline" style="margin-left: 40px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I waive off my entire processing fee 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            amount if I have enough Points?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>I have the option to apply only a limited  
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            number of Points, even though I have more. Why is that?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Is there a maximum limit to the number of 
+            <ion-icon name="chevron-down-outline" style="margin-left: 18px;color: orange;font-size: 15px;"></ion-icon>
+            Points that I can have?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What happens if I have reached the 
+            <ion-icon name="chevron-down-outline" style="margin-left: 45px;color: orange;font-size: 15px;"></ion-icon>
+            limit of 500 points?
+          </p>
+        </ion-item>      
+        </ion-list>
+
+        <div class="container">
+          <h6>Miscellaneous</h6>
+          </div>
+        <ion-list>
+        <ion-item>
+          <p>Is CreditMonk related to KrazyBee?
+            <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I apply for two or more loans
+            <ion-icon name="chevron-down-outline" style="margin-left: 60px;color: orange;font-size: 15px;"></ion-icon>
+            simultaneously?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I change my loan terms?
+            <ion-icon name="chevron-down-outline" style="margin-left: 85px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I get my loan cancelled?
+            <ion-icon name="chevron-down-outline" style="margin-left: 85px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I edit my profile details?
+            <ion-icon name="chevron-down-outline" style="margin-left: 85px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Are the transactions on CreditMonk safe?
+            <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What if I change or lose my phone?
+            <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What if I change my mobile number or lose
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            my SIM?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What kind of OS do you support currently?
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Do you have any plans of supporting the iOS
+            <ion-icon name="chevron-down-outline" style="margin-left: 5px;color: orange;font-size: 15px;"></ion-icon>
+            or Windows for Smartphones?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>In case of any suspected fraud from my 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            account, whom should I reach out to?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How can I block/deactivate my CreditMonk
+            <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;"></ion-icon>
+            account?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Is there any way in which I can join
+            <ion-icon name="chevron-down-outline" style="margin-left: 55px;color: orange;font-size: 15px;"></ion-icon>
+            CreditMonk full time?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How can I reach CreditMonk?
+            <ion-icon name="chevron-down-outline" style="margin-left: 80px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What are the permissions accessed by 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            CreditMonk from the user and why?
+          </p>
+        </ion-item>
+        </ion-list>
+
+        <div class="container">
+          <h6>E-commerce Shopping Loans or E-Vocher Loans</h6>
+        </div>
+        <ion-list>
+        <ion-item>
+          <p>How can I purchase a product on EMI?
+            <ion-icon name="chevron-down-outline" style="margin-left: 35px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Which partners does CreditMonk support for 
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            shopping on EMI?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>When I shop for products on CreditMonk, will
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            I get the actual product?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is an E-voucher?
+            <ion-icon name="chevron-down-outline" style="margin-left: 130px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How can I apply for an E-voucher on
+            <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+            CreditMonk?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How do I use an E-voucher?
+            <ion-icon name="chevron-down-outline" style="margin-left: 100px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Is there any expiry date for the E-voucher?
+            <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Why have I received multiple vouchers?
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>I want to buy the product not the voucher on 
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            EMI?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>The price of the product has changed. What 
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            can I do?
+          </p> 
+        </ion-item>
+        <ion-item>
+          <p>What is Down payment?
+            <ion-icon name="chevron-down-outline" style="margin-left: 120px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is the limit for availing E-commerce 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            shopping Loans/E-voucher Loans?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is the minimum and maximum Loan 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            amount that I can avail?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is the minimum and maximum Product
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            Price that I can purchase?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Is there a processing fee charged?
+            <ion-icon name="chevron-down-outline" style="margin-left: 60px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What are the interest rates?
+            <ion-icon name="chevron-down-outline" style="margin-left: 100px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can I cancel a Loan?
+            <ion-icon name="chevron-down-outline" style="margin-left: 140px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>I do not want to use the E-voucher. Can I 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+
+            return it?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>I have an issue with my E-voucher. How can 
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            I contact you?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>I have an issue with the product that I
+            <ion-icon name="chevron-down-outline" style="margin-left: 45px;color: orange;font-size: 15px;"></ion-icon>
+            purchased using the E-voucher. Whom do I contact?
+          </p>
+        </ion-item>
+        </ion-list>
+
+        <div class="container">
+          <h6>NACH Auto Debit</h6>
+        </div>
+        <ion-list>
+        <ion-item>
+          <p>Will penalties be added to my loan if 
+            <ion-icon name="chevron-down-outline" style="margin-left: 50px;color: orange;font-size: 15px;"></ion-icon>
+
+            CreditMonk does not send an auto debit on EMI due date?
+         </p>
+        </ion-item>
+        <ion-item>
+          <p>Why I am getting the “Auto Debit Requested”
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+
+             message after clicking on the Repay button?
+         </p>
+        </ion-item>
+        <ion-item>
+          <p>Why am I getting an option to repay loan 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+
+            amounts through NACH auto debits?
+         </p>
+        </ion-item>
+        <ion-item>
+          <p>What is the amount for which auto debit will
+            <ion-icon name="chevron-down-outline" style="margin-left: 15px;color: orange;font-size: 15px;"></ion-icon>
+
+            happen, if an auto debit is scheduled for EMI payment?
+         </p>
+        </ion-item>
+        <ion-item>
+          <p>Why is “FINNOVATION TECH SOL PLD” 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+
+            mentioned as the entity with which I am signing the NACH
+             mandate on my physical NACH form, while I am taking the loan from “CreditMonk”?
+         </p>
+        </ion-item>
+        </ion-list>
+
+        <div class="container">
+          <h6>Credit Monk Credit Risk Score</h6>
+        </div>
+        <ion-list>
+        <ion-item>
+          <p>What is CreditMonk Credit Risk Score 
+            <ion-icon name="chevron-down-outline" style="margin-left: 30px;color: orange;font-size: 15px;"></ion-icon>
+            (KCRS)?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>What is CreditMonk Credit Risk Score used
+            <ion-icon name="chevron-down-outline" style="margin-left: 10px;color: orange;font-size: 15px;"></ion-icon>
+            for?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Does KCRS affect my CIBIL or any credit 
+            <ion-icon name="chevron-down-outline" style="margin-left: 20px;color: orange;font-size: 15px;"></ion-icon>
+            scores?
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How do I understand my KCRS?
+            <ion-icon name="chevron-down-outline" style="margin-left: 70px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>My KCRS is low. Will I still get a loan?
+            <ion-icon name="chevron-down-outline" style="margin-left: 40px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>How can I increase my KCRS?
+            <ion-icon name="chevron-down-outline" style="margin-left: 80px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>Can my KCRS change in future ?
+            <ion-icon name="chevron-down-outline" style="margin-left: 65px;color: orange;font-size: 15px;"></ion-icon>
+          </p>
+        </ion-item>
+        </ion-list>
+
+
+</ion-content>
